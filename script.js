@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function loadTasks() {
     const storedTasks = JSON.parse(localStorage.getItem("tasks") || "[]");
-    storedTasks.forEach((taskText) => addTask(taskText, false)); // false prevents saving again
+    storedTasks.forEach((taskText) => addTask(taskText, false));
   }
 
   function addTask(taskText = null, save = true) {
